@@ -14,7 +14,7 @@ create_table="""CREATE TABLE table_name2 (id int auto_increment primary key,name
 cursor.execute(create_table)
 
 insert_table="insert into table_name2 (name,age) values(%s,%s)"
-data=[('Thanishma',21),('Bunny',18),('John',20),('peter',15)]
+data=[('Thanishma',21),('Bunny',18),('John',20),('peter',15),('mary',25)]
 cursor.executemany(insert_table,data)
 
 print("Table printed successfully")
